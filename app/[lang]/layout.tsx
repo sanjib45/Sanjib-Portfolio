@@ -23,7 +23,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
   const isTr = lang === "tr";
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sanjibsantra.dev";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sanjibdev.vercel.app";
 
   const title = isTr
     ? "Sanjib Santra | Full Stack Geliştirici (Next.js, Node.js, React)"

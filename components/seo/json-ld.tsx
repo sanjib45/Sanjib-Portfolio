@@ -1,5 +1,5 @@
 export function JsonLd({ lang }: { lang: string }) {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sanjibsantra.dev';
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sanjibdev.vercel.app';
   const isTr = lang === 'tr';
 
   const personSchema = {
