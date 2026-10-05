@@ -18,10 +18,8 @@ interface ContactModalProps {
 }
 
 export function ContactModal({ open, onOpenChange }: ContactModalProps) {
-  const { content, dict, language } = useLanguage();
+  const { content } = useLanguage();
   useLenisModal(open);
-
-  const isEn = language === "en";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -57,19 +55,14 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
       } else {
         setIsSubmitting(false);
         setErrorMessage(
-          data.error ||
-            (isEn
-              ? "Failed to send message. Please try again."
-              : "Mesaj gönderilemedi. Lütfen tekrar deneyin.")
+          data.error || "Failed to send message. Please try again."
         );
       }
     } catch (err) {
       console.error("Submission error:", err);
       setIsSubmitting(false);
       setErrorMessage(
-        isEn
-          ? "Network error. Please try again or email directly."
-          : "Bağlantı hatası. Lütfen tekrar deneyin veya doğrudan e-posta gönderin."
+        "Network error. Please try again or email directly."
       );
     }
   };
@@ -90,18 +83,21 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
         <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent z-10" />
 
         <div className="p-7 sm:p-9">
-          {/* Eyebrow & Header */}
-          <div className="mb-7">
+          {/* Eyebrow & Header with Accessible DialogTitle */}
+          <DialogHeader className="mb-7 text-left">
             <span className="text-[10px] font-mono tracking-[0.25em] text-zinc-400 uppercase font-semibold block mb-2">
-              {isEn ? "GET IN TOUCH" : "İLETİŞİME GEÇİN"}
+              GET IN TOUCH
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white flex items-center gap-2 flex-wrap">
-              <span>{isEn ? "Start a" : "Bir konuşma"}</span>
+            <DialogTitle className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white flex items-center gap-2 flex-wrap">
+              <span>Start a</span>
               <span className="font-serif italic font-normal text-zinc-400">
-                {isEn ? "conversation" : "başlatın"}
+                conversation
               </span>
-            </h2>
-          </div>
+            </DialogTitle>
+            <DialogDescription className="sr-only">
+              Send a direct message or project inquiry to Sanjib Santra
+            </DialogDescription>
+          </DialogHeader>
 
           {submitted ? (
             <div className="py-10 flex flex-col items-center text-center">
@@ -109,19 +105,17 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                 <Check className="w-6 h-6" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">
-                {isEn ? "Message Sent Successfully!" : "Mesajınız Başarıyla İletildi!"}
+                Message Sent Successfully!
               </h3>
               <p className="text-sm text-zinc-400 max-w-sm mb-6 leading-relaxed">
-                {isEn
-                  ? "Thank you for reaching out! Your inquiry has been delivered directly to my inbox. I will review it and reply within 24 hours."
-                  : "İletişime geçtiğiniz için teşekkürler! Mesajınız doğrudan gelen kutuma iletildi. 24 saat içinde dönüş yapacağım."}
+                Thank you for reaching out! Your inquiry has been delivered directly to my inbox. I will review it and reply within 24 hours.
               </p>
               <button
                 type="button"
                 onClick={handleReset}
                 className="text-xs font-mono uppercase tracking-wider text-primary hover:underline"
               >
-                {isEn ? "Send another message" : "Başka bir mesaj gönder"}
+                Send another message
               </button>
             </div>
           ) : (
@@ -133,7 +127,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                     htmlFor="contact-name"
                     className="text-[10px] font-mono tracking-[0.2em] uppercase text-zinc-400 font-semibold"
                   >
-                    {isEn ? "NAME" : "İSİM"}
+                    NAME
                   </label>
                   <input
                     id="contact-name"
@@ -143,7 +137,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                     onChange={(e) =>
                       setFormData((prev) => ({ ...prev, name: e.target.value }))
                     }
-                    placeholder={isEn ? "Your name" : "Adınız"}
+                    placeholder="Your name"
                     className="w-full px-4 py-3 rounded-xl bg-zinc-900/60 border border-zinc-800 text-sm text-zinc-100 placeholder:text-zinc-600 focus:outline-none focus:border-zinc-500 focus:ring-1 focus:ring-zinc-500 transition-all font-sans"
                   />
                 </div>
@@ -153,7 +147,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                     htmlFor="contact-email"
                     className="text-[10px] font-mono tracking-[0.2em] uppercase text-zinc-400 font-semibold"
                   >
-                    {isEn ? "EMAIL" : "E-POSTA"}
+                    EMAIL
                   </label>
                   <input
                     id="contact-email"
@@ -175,7 +169,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                   htmlFor="contact-message"
                   className="text-[10px] font-mono tracking-[0.2em] uppercase text-zinc-400 font-semibold"
                 >
-                  {isEn ? "MESSAGE" : "MESAJ"}
+                  MESSAGE
                 </label>
                 <textarea
                   id="contact-message"
@@ -185,11 +179,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                   onChange={(e) =>
                     setFormData((prev) => ({ ...prev, message: e.target.value }))
                   }
-                  placeholder={
-                    isEn
-                      ? "Tell me about your project..."
-                      : "Projenizden bahsedin..."
-                  }
+                  placeholder="Tell me about your project..."
                   className="w-full px-4 py-3 rounded-xl bg-zinc-900/60 border border-zinc-800 text-sm text-zinc-100 placeholder:text-zinc-600 focus:outline-none focus:border-zinc-500 focus:ring-1 focus:ring-zinc-500 transition-all resize-none font-sans"
                 />
                 {/* Honeypot field (hidden from real users, traps spam bots) */}
@@ -223,11 +213,11 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                 {isSubmitting ? (
                   <div className="flex items-center gap-2">
                     <span className="w-3.5 h-3.5 border-2 border-zinc-950/30 border-t-zinc-950 rounded-full animate-spin" />
-                    <span>{isEn ? "SENDING..." : "GÖNDERİLİYOR..."}</span>
+                    <span>SENDING...</span>
                   </div>
                 ) : (
                   <>
-                    <span>{isEn ? "SEND MESSAGE" : "MESAJ GÖNDER"}</span>
+                    <span>SEND MESSAGE</span>
                     <Send className="w-3.5 h-3.5" />
                   </>
                 )}
