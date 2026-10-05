@@ -1,0 +1,48 @@
+{
+    "nav": {
+        "home": "Home",
+        "about": "About",
+        "stack": "Stack",
+        "projects": "Projects",
+        "roadmap": "Experience",
+        "resume": "Resume",
+        "contact": "Contact"
+    },
+    "title": {
+        "about": "About",
+        "stack": "Stack",
+        "projects": "Projects",
+        "roadmap": "Experience",
+        "resume": "Resume",
+        "contact": "Contact"
+    },
+    "scrollDown": "Scroll",
+    "contactMe": "Get in Touch",
+    "exploreProjects": "View Projects",
+    "readFullVersion": "Read Full Story",
+    "frontendStack": "Frontend & Languages",
+    "backendStack": "Backend Technologies",
+    "databaseStack": "Databases & Storage",
+    "aiStack": "AI / LLM & Integrations",
+    "toolsStack": "Tools & DevOps",
+    "projectsIntro": "Production systems, freelance client platforms, and full-stack applications — built with ownership from architecture to deployment.",
+    "projectsScrollText": "Scroll to explore",
+    "projectsEndText": "End",
+    "roadmapDescription": "My professional journey — from internships and freelance work to full-time production systems, alongside my academic background.",
+    "contactIntroText": "Open to full-time and freelance full-stack opportunities.",
+    "sendEmail": "Send an Email",
+    "directLine": "Direct Line",
+    "allRightsReserved": "All rights reserved.",
+    "contactModalDescription": "Send me a message and I'll get back to you as soon as possible.",
+    "projectDetails": "Details about",
+    "aboutProject": "About the Project",
+    "technologies": "Technologies",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code",
+    "downloadResume": "Download Résumé",
+    "notFound": {
+        "title": "Page Not Found",
+        "description": "The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.",
+        "goHome": "Back to Home"
+    }
+}

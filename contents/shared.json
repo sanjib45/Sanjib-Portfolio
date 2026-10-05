@@ -1,0 +1,183 @@
+{
+    "contact": {
+        "location": "Kolkata, West Bengal, India",
+        "email": "santrasanjib199@gmail.com",
+        "phone": "+91 7076661578"
+    },
+    "social": [
+        {
+            "label": "GitHub",
+            "href": "https://github.com/sanjib45"
+        },
+        {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/sanjib-santra/"
+        }
+    ],
+    "stack": {
+        "frontend": [
+            {
+                "name": "React.js",
+                "icon": "/stack/react.svg",
+                "featured": true
+            },
+            {
+                "name": "Next.js",
+                "icon": "/stack/nextjs.svg",
+                "featured": true
+            },
+            {
+                "name": "TypeScript",
+                "icon": "/stack/typescript.svg",
+                "featured": true
+            },
+            {
+                "name": "JavaScript (ES6+)",
+                "icon": "/stack/javascript.svg",
+                "featured": true
+            },
+            {
+                "name": "Tailwind CSS",
+                "icon": "/stack/tailwindcss.svg"
+            },
+            {
+                "name": "Vite",
+                "icon": "/stack/vite.svg"
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "/stack/bootstrap.svg"
+            },
+            {
+                "name": "GSAP",
+                "icon": "/stack/framermotion.svg"
+            },
+            {
+                "name": "HTML5",
+                "icon": "/stack/html5.svg"
+            },
+            {
+                "name": "CSS3",
+                "icon": "/stack/css3.svg"
+            }
+        ],
+        "backend": [
+            {
+                "name": "Node.js",
+                "icon": "/stack/nodejs.svg",
+                "featured": true
+            },
+            {
+                "name": "Express.js",
+                "icon": "/stack/nodejs.svg",
+                "featured": true
+            },
+            {
+                "name": "REST APIs",
+                "icon": "/stack/nodejs.svg"
+            },
+            {
+                "name": "Socket.IO",
+                "icon": "/stack/socketio.svg",
+                "featured": true
+            },
+            {
+                "name": "Prisma ORM",
+                "icon": "/stack/prisma.svg",
+                "featured": true
+            },
+            {
+                "name": "Mongoose",
+                "icon": "/stack/mongodb.svg"
+            }
+        ],
+        "database": [
+            {
+                "name": "MongoDB",
+                "icon": "/stack/mongodb.svg",
+                "featured": true
+            },
+            {
+                "name": "PostgreSQL",
+                "icon": "/stack/postgresql.svg",
+                "featured": true
+            },
+            {
+                "name": "Redis",
+                "icon": "/stack/redis.svg",
+                "featured": true
+            },
+            {
+                "name": "MySQL",
+                "icon": "/stack/mysql.svg"
+            },
+            {
+                "name": "SQLite",
+                "icon": "/stack/sqlite.svg"
+            }
+        ],
+        "ai": [
+            {
+                "name": "Google Gemini API",
+                "icon": "/stack/gemini.svg",
+                "featured": true
+            },
+            {
+                "name": "Anthropic Claude API",
+                "icon": "/stack/gemini.svg"
+            },
+            {
+                "name": "Groq Cloud",
+                "icon": "/stack/nodejs.svg"
+            },
+            {
+                "name": "OpenRouter API",
+                "icon": "/stack/nodejs.svg"
+            },
+            {
+                "name": "WhatsApp Cloud API",
+                "icon": "/stack/nodejs.svg"
+            },
+            {
+                "name": "Brevo CRM API",
+                "icon": "/stack/nodejs.svg"
+            },
+            {
+                "name": "Puppeteer",
+                "icon": "/stack/nodejs.svg"
+            }
+        ],
+        "tools": [
+            {
+                "name": "Git / GitHub",
+                "icon": "/stack/git.svg",
+                "featured": true
+            },
+            {
+                "name": "Vercel",
+                "icon": "/stack/vercel.svg",
+                "featured": true
+            },
+            {
+                "name": "Render",
+                "icon": "/stack/render.svg"
+            },
+            {
+                "name": "Postman",
+                "icon": "/stack/postman.svg"
+            },
+            {
+                "name": "Linux",
+                "icon": "/stack/linux.svg"
+            },
+            {
+                "name": "CI/CD",
+                "icon": "/stack/git.svg"
+            },
+            {
+                "name": "JWT / RBAC",
+                "icon": "/stack/nodejs.svg"
+            }
+        ]
+    }
+}

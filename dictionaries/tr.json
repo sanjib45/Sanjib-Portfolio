@@ -1,0 +1,48 @@
+{
+    "nav": {
+        "home": "Ana Sayfa",
+        "about": "Hakkımda",
+        "stack": "Teknolojiler",
+        "projects": "Projeler",
+        "roadmap": "Deneyim",
+        "resume": "Özgeçmiş",
+        "contact": "İletişim"
+    },
+    "title": {
+        "about": "Hakkımda",
+        "stack": "Teknolojiler",
+        "projects": "Projeler",
+        "roadmap": "Deneyim",
+        "resume": "Özgeçmiş",
+        "contact": "İletişim"
+    },
+    "scrollDown": "Kaydır",
+    "contactMe": "Get in Touch",
+    "exploreProjects": "View Projects",
+    "readFullVersion": "Read Full Story",
+    "frontendStack": "Ön Yüz ve Diller",
+    "backendStack": "Arka Yüz Teknolojileri",
+    "databaseStack": "Veritabanları ve Depolama",
+    "aiStack": "Yapay Zeka ve Entegrasyonlar",
+    "toolsStack": "Araçlar ve DevOps",
+    "projectsIntro": "Production systems, freelance client platforms, and full-stack applications — built with ownership from architecture to deployment.",
+    "projectsScrollText": "Keşfetmek için kaydır",
+    "projectsEndText": "Son",
+    "roadmapDescription": "My professional journey — from internships and freelance work to full-time production systems, alongside my academic background.",
+    "contactIntroText": "Open to full-time and freelance full-stack opportunities.",
+    "sendEmail": "E-posta Gönder",
+    "directLine": "Telefon Numarası",
+    "allRightsReserved": "Tüm hakları saklıdır.",
+    "contactModalDescription": "Bana bir mesaj gönderin, en kısa sürede size geri dönüş yapayım.",
+    "projectDetails": "Proje Detayları",
+    "aboutProject": "Proje Hakkında",
+    "technologies": "Teknolojiler",
+    "liveDemo": "Canlı Demo",
+    "sourceCode": "Kaynak Kodları",
+    "downloadResume": "Özgeçmiş İndir",
+    "notFound": {
+        "title": "Sayfa Bulunamadı",
+        "description": "Aradığınız sayfa kaldırılmış, adı değiştirilmiş veya geçici olarak kullanım dışı kalmış olabilir.",
+        "goHome": "Ana Sayfaya Dön"
+    }
+}

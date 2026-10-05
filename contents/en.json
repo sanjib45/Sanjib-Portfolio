@@ -1,0 +1,496 @@
+{
+    "about": {
+        "tagline": "Full Stack Engineer specializing in scalable Next.js & Node.js architectures, distributed systems, and hardened enterprise platforms — delivering production software from architectural discovery to client deployment.",
+        "intro": "I engineer *production-grade web platforms* with **architectural clarity**, enterprise security, and end-to-end ownership — from high-scale healthcare systems to solo-deployed ERPs.",
+        "description": "Full Stack Developer (MERN Stack) with hands-on production ownership across healthcare technology, headless CMS platforms, and multi-tenant systems. I design resilient RESTful APIs, implement hardened auth & RBAC, and deliver software that scales under real operational load.",
+        "full": "I'm **Sanjib Santra**, a **Full Stack Engineer (MERN / Next.js / TypeScript)** with hands-on production ownership across enterprise healthcare technology, headless CMS architectures, multi-tenant SaaS systems, and live client-deployed ERPs.\n\n**Engineering Philosophy & Production Ownership**\nWhat differentiates my engineering work is end-to-end ownership from day one. I don't just write features — I partner with stakeholders to discover domain requirements, architect scalable data models, implement hardened security boundaries, and drive systems through to production deployment and operational handover.\n\n**Production Highlights & Track Record**\n• **Help Create Families (HCF)**: Contributed to an enterprise surrogacy and parentage monorepo (Next.js 15, React 19, Express, MongoDB) featuring a 20+ block schema engine that eliminated developer dependencies for marketing page launches, alongside an ARIA-compliant 50-state legal directory and Brevo CRM sync.\n• **Dooars Green FPO ERP**: Served as the sole full-stack developer on a live client ERP deployed for a rural agricultural producer. Translated complex agricultural accounting logic into an auditable platform consolidating 7 operational workflows, automated ₹ PDF statements via Puppeteer, and enforced user-level query isolation to prevent IDOR.\n• **EasilyJob (Hiring Platform & Placement Cell)**: Architected a commercial-grade recruitment SaaS implementing the Transactional Outbox Pattern with Prisma ORM to guarantee zero dropped emails, real-time Socket.IO candidate-recruiter messaging, and double-submit CSRF protection.\n• **Multi-Role Healthcare LIMS**: Designed a 4-role Lab Information Management System with strict tenant isolation, OTP authentication, and an event-driven WhatsApp Cloud API notification engine.\n\n**Core Technical Proficiency**\n• **Frontend Architecture**: Next.js 15/14 (App Router, SSR, SSG), React 19/18, TypeScript, Tailwind CSS, GSAP ScrollTrigger, Vite, Responsive Mobile-First Design.\n• **Backend & Distributed Systems**: Node.js, Express.js 5, RESTful API Design, Prisma ORM, MongoDB Atlas, Mongoose, Socket.IO, Transactional Outbox Pattern, Event-Driven Architecture.\n• **Security & Infrastructure**: JWT refresh token rotation, rotating httpOnly cookies, RBAC, double-submit CSRF, Helmet, rate limiting, Puppeteer PDF generation, Docker, CI/CD, Vercel, Render.\n\n**Academic Excellence & Credentials**\n• **Master of Computer Applications (MCA)** — Future Institute of Engineering and Management, Kolkata (CGPA: 7.18/10).\n• **Bachelor of Computer Applications (BCA)** — Prabhat Kumar College, Contai (CGPA: 9.30/10).\n• **Certified Full Stack Web Developer** — Coding Ninjas (Mar – Nov 2025).\n• **NPTEL Online Certification** — IIT / NPTEL (2024).\n• **Claude AI 101 Certification** — Anthropic (2025).\n• Team Player of the Year (2024) — Recognized Excellence.\n\nI believe the most impactful engineers solve business-critical bottlenecks with resilient, maintainable code — always prioritizing architecture before code and security as a default."
+    },
+    "manifesto": [
+        "OWNERSHIP FROM DAY ONE",
+        "ARCHITECTURE BEFORE CODE",
+        "SECURITY AS A DEFAULT",
+        "CLEAN SYSTEMS OVER CLEVER HACKS",
+        "PERFORMANCE WITHOUT COMPROMISE",
+        "CLIENT-FIRST DELIVERY"
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "Help Create Families (HCF)",
+            "category": "Enterprise Production — HOVSOL Technologies",
+            "year": "2025 – Present",
+            "description": "Enterprise surrogacy and parentage platform built as an npm Workspaces monorepo: Next.js 15 public site, React 19/Vite admin CMS, and Express/MongoDB API sharing a common TypeScript types package.",
+            "image": "/projects/hcf-live.png",
+            "demo": "https://helpcreatefamilies.com/",
+            "isLiveProduction": true,
+            "stack": [
+                "Next.js 15",
+                "React 19",
+                "TypeScript",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Tailwind CSS",
+                "GSAP",
+                "Monorepo"
+            ],
+            "role": "Full Stack Developer",
+            "org": "HOVSOL Technologies",
+            "timeline": "Dec 2025 – Present",
+            "type": "Enterprise Production",
+            "problem": "Marketing and clinic intake teams relied heavily on engineering for every single landing page change, while prospective parents needed a compliant, secure 50-state screening and intake pipeline.",
+            "solution": "Engineered a schema-driven block engine with 20+ customizable page blocks, an ARIA-compliant 50 US-state directory with debounced search and tier filtering, and an automated screening quiz integrated with Google reCAPTCHA v3 and CRM sync.",
+            "architectureHighlights": [
+                "Monorepo architecture using npm Workspaces: shared TypeScript types package across Next.js 15, Vite admin, and Express API.",
+                "Schema-driven block engine with 20+ production components (hero, timelines, comparison tables, FAQs) eliminating developer deployment dependency.",
+                "State-by-state legal eligibility directory covering all 50 US states plus DC with tier filtering and debounced search.",
+                "Secured admin with JWT refresh token rotation, idle-timeout session renewal, and role-based access control (Admin, Editor, Read-Only)."
+            ],
+            "keyFeatures": [
+                "Candidate screening quiz protected by Google reCAPTCHA v3 syncing directly to Brevo and medical CRMs with audit logging.",
+                "GSAP ScrollTrigger animations and fluid CSS clamp() typography for 320px to 4K responsive layouts.",
+                "Resilient CRM form-dispatch service with automated retry and webhook synchronization.",
+                "Zero-developer-dependency page composition workflow for non-technical marketing staff."
+            ],
+            "impact": [
+                "Completely eliminated engineering bottlenecks for marketing and clinic page launches.",
+                "Delivered enterprise-grade HIPAA/regulatory alignment with consent-first intake routing.",
+                "Live in active production serving prospective families across the United States."
+            ]
+        },
+        {
+            "id": "2",
+            "title": "Dooars Green FPO ERP",
+            "category": "Solo Client Deployment — Dooars Green FPO (MCS Ltd.)",
+            "year": "2026",
+            "description": "Sole developer on a live, client-deployed tea procurement and financial settlement ERP for Dooars Green FPO (MCS Ltd.) — from requirement gathering and system design through to production deployment and client handover.",
+            "image": "/projects/dooars-green-live.png",
+            "demo": "https://dooars-green-frontend.vercel.app/dashboard",
+            "isLiveProduction": true,
+            "stack": [
+                "React 18",
+                "Vite",
+                "Tailwind CSS",
+                "Node.js",
+                "Express.js",
+                "MongoDB Atlas",
+                "Mongoose",
+                "JWT",
+                "Puppeteer",
+                "Vercel"
+            ],
+            "role": "Freelance Full Stack Developer (Sole Engineer)",
+            "org": "Dooars Green FPO (MCS Ltd.)",
+            "timeline": "May – Jul 2026",
+            "type": "Live Client Production",
+            "problem": "A rural Farmer Producer Organisation ran seven fragmented operational workflows — merchant management, factory records, labour tracking, buyer management, payments, advances, and dashboard reporting — with no unified system, causing manual accounting errors, payment delays, and reconciliation overhead.",
+            "solution": "Gathered domain accounting rules directly from agricultural stakeholders, architected a unified React/Node.js/MongoDB platform with user-scoped multi-tenancy, automated A4 PDF invoice/statement generation with Indian Rupee (₹) formatting via Puppeteer, and hardened authentication.",
+            "architectureHighlights": [
+                "User-level data isolation — every database query is scoped to the authenticated user ID, strictly preventing cross-tenant data access.",
+                "Automated PDF generation via Puppeteer with Indian currency formatting (₹) and serverless Chromium fallback for Vercel deployment.",
+                "Full auth hardening stack: JWT access tokens with rotating httpOnly refresh cookies, bcrypt password hashing, Helmet security headers, CORS allowlisting, and rate limiting."
+            ],
+            "keyFeatures": [
+                "Consolidated all 7 operational workflows (merchant, factory, labour, buyer, payments, advances, dashboard) into one unified auditable platform.",
+                "Automated printable A4 settlement statements, weighbridge receipts, and invoices.",
+                "CSV bulk-import pipeline for migrating legacy agricultural records.",
+                "Glassmorphic branded portal with multi-session token security."
+            ],
+            "impact": [
+                "Live in production — currently operating as the daily operational backbone for Dooars Green FPO.",
+                "Sole developer from discovery through requirement gathering, system design, implementation, deployment, and client handover.",
+                "Eliminated 7 fragmented manual workflows into a single auditable system — direct end-to-end engineering ownership."
+            ]
+        },
+        {
+            "id": "3",
+            "title": "EasilyJob — Placement Portal",
+            "category": "Full-Stack SaaS Platform — Flagship Architecture",
+            "year": "2026",
+            "description": "Full-featured hiring platform and placement management cell with dual recruiter/job-seeker workspaces, multi-round interview pipelines, private candidate scoring, real-time Socket.IO chat, and the Transactional Outbox Pattern for email delivery.",
+            "image": "/projects/easilyjob-live.png",
+            "demo": "https://easilyjob.vercel.app/",
+            "repo": "https://github.com/sanjib45/Easilyjob",
+            "isLiveProduction": true,
+            "stack": [
+                "Node.js",
+                "Express.js 5",
+                "MongoDB Atlas",
+                "Prisma ORM",
+                "Socket.IO",
+                "EJS",
+                "JWT",
+                "Nodemailer",
+                "Tailwind CSS"
+            ],
+            "role": "Full Stack Engineer",
+            "org": "EasilyJob",
+            "timeline": "2026",
+            "type": "Production SaaS",
+            "problem": "Traditional placement and campus hiring portals suffer from dropped transactional emails during SMTP timeouts, lack real-time candidate-recruiter messaging, and offer no structured interview stage scoring.",
+            "solution": "Architected an end-to-end recruitment platform with segregated role workspaces (recruiter ATS vs. applicant dashboard), real-time WebSocket communications, and a resilient Transactional Outbox Pattern using Prisma ORM to ensure zero message loss.",
+            "architectureHighlights": [
+                "Transactional Outbox Pattern: email records written in the same atomic Prisma transaction as business events, processed by background workers with exponential backoff.",
+                "Real-time recruiter-candidate messaging powered by Socket.IO with cookie-authenticated handshakes and HTTP POST fallbacks for serverless environments.",
+                "Security hardening: short-lived JWTs, rotating httpOnly cookies, double-submit CSRF tokens, Helmet security headers, rate limiting, and tenant query isolation preventing IDOR."
+            ],
+            "keyFeatures": [
+                "Dual dedicated portals: Recruiter ATS Kanban board with inline PDF resume preview vs. 1-click candidate application tracker.",
+                "Multi-round interview evaluation matrix (technical, communication, culture-fit scoring).",
+                "Live 5-stage status stepper for real-time application progress updates.",
+                "Automated transactional notification engine with idempotency keys preventing duplicate alerts."
+            ],
+            "impact": [
+                "Zero email drops achieved through Transactional Outbox background processing.",
+                "Modernized the university placement cell workflow into a production-grade commercial recruitment experience.",
+                "Live on Vercel with active open-source repository on GitHub."
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Hospital Portal SPA",
+            "category": "Healthcare Web App — Single Page Application",
+            "year": "2025",
+            "description": "Responsive healthcare portal single-page application showcasing multi-tier emergency triaging, department diagnostics schedule, medical specialist directory, transparent consultation pricing, and an interactive appointment booking flow.",
+            "image": "/projects/hospital-portal-live.png",
+            "demo": "https://hospitap-portal-single-landing-page.vercel.app/",
+            "repo": "https://github.com/sanjib45/Hospitap-Portal-Single_LandingPage",
+            "isLiveProduction": true,
+            "stack": [
+                "HTML5",
+                "CSS3",
+                "Bootstrap 4",
+                "jQuery",
+                "JavaScript",
+                "FontAwesome",
+                "Responsive Design"
+            ],
+            "role": "Frontend / UI Engineer",
+            "org": "Healthcare Client Initiative",
+            "timeline": "2025",
+            "type": "Single Page Application",
+            "problem": "Healthcare patients require immediate access to emergency hotlines, operating clinic hours, doctor timetables, and appointment requests without navigating convoluted multi-page menus.",
+            "solution": "Designed and developed an intuitive, high-performance single-page healthcare portal with prioritized emergency action triggers, real-time operating timetable widgets, doctor profile showcases, and accessible appointment forms.",
+            "architectureHighlights": [
+                "Two-tier responsive navigation architecture: top emergency contact bar and sticky secondary navigation with mobile drawer.",
+                "Real-time diagnostic clinic schedule table and direct emergency hotline call dispatch (1-800-123-4560).",
+                "Modular department & medical specialist showcase with clean CSS card layouts and fluid responsive typography."
+            ],
+            "keyFeatures": [
+                "Diagnostic & opening hours interactive timetable with live operating status.",
+                "Emergency case rapid-contact module with one-tap dialing.",
+                "Multi-speciality department grid (cardiology, neurology, pediatrics, diagnostic imaging).",
+                "Doctor timetable lookup and integrated appointment request booking flow.",
+                "Responsive, cross-browser tested layout optimized for desktop, tablet, and mobile devices."
+            ],
+            "impact": [
+                "Streamlined patient onboarding by consolidating emergency, scheduling, and doctor discovery into a fast single-page experience.",
+                "Live deployment on Vercel with public source code on GitHub demonstrating versatile frontend execution."
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Enterprise Multi-Role LIMS",
+            "category": "Enterprise HealthTech — HOVSOL Technologies",
+            "year": "2025 – Present",
+            "description": "Architected a production-grade multi-role Lab Information Management System serving four distinct user roles (Labs, Collection Centers, Technicians, Patients) with strict data isolation, a full booking lifecycle, and an event-driven WhatsApp notification system.",
+            "image": "/projects/20260427093247620.jpg",
+            "isLiveProduction": true,
+            "stack": [
+                "React 18",
+                "Next.js 14",
+                "TypeScript",
+                "Node.js",
+                "Express.js",
+                "JWT",
+                "MongoDB",
+                "WhatsApp Cloud API"
+            ],
+            "role": "Full Stack Developer",
+            "org": "HOVSOL Technologies",
+            "timeline": "Dec 2025 – Present",
+            "type": "Enterprise HealthTech",
+            "problem": "The organisation needed a single unified system serving four distinct user roles — Labs, Collection Centers, Technicians, and Patients — with strict data isolation, role-specific workflows, and a complete lab booking lifecycle.",
+            "solution": "Architected a production-grade multi-role LIMS with dedicated controllers and isolated data access per role, plus a mobile-first OTP-authenticated Patient Portal.",
+            "architectureHighlights": [
+                "Multi-tenant architecture isolating patient records, bookings, and configurations per role.",
+                "JWT + RBAC enforcement across all four roles — dedicated middleware per role boundary.",
+                "Event-driven WhatsApp notification system (WhatsApp Cloud API) with opt-in consent management and per-role feature toggles.",
+                "Non-blocking async notification execution — notification failures do not affect booking flow."
+            ],
+            "keyFeatures": [
+                "Full booking lifecycle: creation → sample collection → report verification → patient delivery.",
+                "OTP-authenticated Patient Portal with mobile-first UX.",
+                "Consent-first notification design — patients opt in per notification type.",
+                "Isolated data access layer — no cross-role data leakage by design."
+            ],
+            "impact": [
+                "Enabled secure, compliant multi-role operations at scale across labs, collection centers, and patients.",
+                "Patient consent-first notification design reduces notification fatigue and ensures regulatory alignment.",
+                "Eliminated data isolation risks between roles through architectural enforcement, not runtime checks."
+            ]
+        }
+    ],
+    "roadmap": [
+        {
+            "id": "01",
+            "year": "Nov–Dec 2025",
+            "description": "React.js Developer Intern (Remote) — Built reusable React components and integrated REST APIs for real-time product features. First hands-on exposure to production codebases, team workflows, and component-driven development.",
+            "stack": [
+                "React",
+                "JavaScript",
+                "REST APIs"
+            ]
+        },
+        {
+            "id": "02",
+            "year": "Dec 2025–Present",
+            "description": "Full Stack Developer at HOVSOL Technologies (India) — Architected and independently built a healthcare block-based CMS and a multi-role Lab Information Management System (LIMS) from the ground up. Owning the full stack across both products: system design, security, integrations, and delivery.",
+            "stack": [
+                "React 18",
+                "Next.js 14",
+                "TypeScript",
+                "Node.js",
+                "MongoDB",
+                "JWT / RBAC"
+            ]
+        },
+        {
+            "id": "03",
+            "year": "May–Jul 2026",
+            "description": "Freelance Full Stack Developer for Dooars Green FPO, MCS Ltd. (Remote) — Sole developer on a live, client-deployed tea procurement and settlement ERP. Gathered requirements, translated domain accounting logic into system design, and delivered the platform end-to-end.",
+            "stack": [
+                "React 18",
+                "Vite",
+                "Node.js",
+                "MongoDB Atlas",
+                "Puppeteer",
+                "Vercel"
+            ]
+        },
+        {
+            "id": "04",
+            "year": "2022–2024",
+            "description": "Master of Computer Applications (MCA) — Future Institute of Engineering and Management, Kolkata. CGPA: 7.18/10. Focused on software engineering, system design, and backend development fundamentals. Final-year project: Placement Cell Management System.",
+            "stack": [
+                "Java",
+                "DBMS",
+                "Software Engineering",
+                "Node.js"
+            ]
+        },
+        {
+            "id": "05",
+            "year": "2019–2022",
+            "description": "Bachelor of Computer Applications (BCA) — Prabhat Kumar College, Contai, West Bengal. CGPA: 9.30/10. Strong foundational grounding in programming, data structures, and web technologies. Full Stack Web Development certification from Coding Ninjas (Mar–Nov 2025).",
+            "stack": [
+                "C",
+                "C++",
+                "HTML/CSS",
+                "JavaScript",
+                "MySQL"
+            ]
+        }
+    ],
+    "resume": {
+        "title": "Full Stack Developer",
+        "subtitle": "Production-Focused · Architecture-Driven · Security-First",
+        "summary": "Full Stack Developer with hands-on production ownership across healthcare technology, CMS architecture, multi-tenant SaaS systems, and client-deployed ERPs. I architect, build, secure, and ship — end to end.",
+        "experience": [
+            {
+                "id": "exp-1",
+                "role": "Full Stack Developer",
+                "company": "HOVSOL Technologies",
+                "location": "India",
+                "period": "Dec 2025 – Present",
+                "type": "Full-Time",
+                "current": true,
+                "description": "Architecting and independently building production healthcare platforms — a custom block-based CMS and a multi-role Lab Information Management System (LIMS) — owning the full stack across both products.",
+                "highlights": [
+                    "Built a JSON-driven block-based CMS from scratch — eliminating developer dependency for content updates",
+                    "Architected multi-role LIMS serving 4 user roles with strict data isolation and RBAC enforcement",
+                    "Designed event-driven WhatsApp notification system with consent management and feature toggles",
+                    "Implemented centralized form dispatch routing patient data to multiple third-party CRMs"
+                ]
+            },
+            {
+                "id": "exp-2",
+                "role": "Freelance Full Stack Developer",
+                "company": "Dooars Green FPO (MCS Ltd.)",
+                "location": "Remote",
+                "period": "May – Jul 2026",
+                "type": "Freelance",
+                "current": false,
+                "description": "Sole developer on a live, client-deployed tea procurement and settlement ERP — from requirement gathering and system design through to production deployment and client handover.",
+                "highlights": [
+                    "Consolidated 7 fragmented operational workflows into a single auditable ERP system",
+                    "Built automated PDF generation with Indian currency formatting via Puppeteer",
+                    "Implemented full auth hardening: JWT + rotating httpOnly refresh cookies, bcrypt, Helmet, rate limiting",
+                    "Live in production — deployed to a real client and currently in active use"
+                ]
+            },
+            {
+                "id": "exp-3",
+                "role": "React.js Developer Intern",
+                "company": "Remote Internship",
+                "location": "Remote",
+                "period": "Nov – Dec 2025",
+                "type": "Internship",
+                "current": false,
+                "description": "Built reusable React components and integrated REST APIs for real-time product features. First hands-on exposure to production codebases and team workflows.",
+                "highlights": [
+                    "Developed reusable component library following atomic design principles",
+                    "Integrated REST APIs for real-time data rendering and state management",
+                    "Collaborated within team workflows using Git-based version control"
+                ]
+            }
+        ],
+        "education": [
+            {
+                "id": "edu-1",
+                "degree": "Master of Computer Applications (MCA)",
+                "institution": "Future Institute of Engineering and Management",
+                "location": "Kolkata, West Bengal",
+                "period": "2022 – 2024",
+                "cgpa": "7.18 / 10",
+                "description": "Focused on software engineering, system design, and backend development. Final-year project: Placement Cell Management System.",
+                "highlights": [
+                    "Software Engineering & System Design",
+                    "Database Management Systems",
+                    "Advanced Java & Backend Patterns"
+                ]
+            },
+            {
+                "id": "edu-2",
+                "degree": "Bachelor of Computer Applications (BCA)",
+                "institution": "Prabhat Kumar College",
+                "location": "Contai, West Bengal",
+                "period": "2019 – 2022",
+                "cgpa": "9.30 / 10",
+                "description": "Strong foundational grounding in programming, data structures, and web technologies.",
+                "highlights": [
+                    "Data Structures & Algorithms",
+                    "Programming Fundamentals (C, C++)",
+                    "Web Technologies & MySQL"
+                ]
+            }
+        ],
+        "skills": {
+            "languages": [
+                "JavaScript (ES6+)",
+                "TypeScript",
+                "HTML5",
+                "CSS3"
+            ],
+            "frontend": [
+                "React.js",
+                "Next.js",
+                "Vite",
+                "Tailwind CSS",
+                "Bootstrap",
+                "GSAP",
+                "Responsive Design"
+            ],
+            "backend": [
+                "Node.js",
+                "Express.js",
+                "REST APIs",
+                "MongoDB",
+                "Mongoose",
+                "Prisma ORM",
+                "Socket.IO"
+            ],
+            "databases": [
+                "MongoDB (Aggregation Pipelines)",
+                "PostgreSQL",
+                "MySQL",
+                "SQLite",
+                "Redis"
+            ],
+            "ai": [
+                "Google Gemini API",
+                "Anthropic Claude API",
+                "Groq Cloud (Llama 3 / Mixtral)",
+                "OpenRouter API Gateway"
+            ],
+            "security": [
+                "JWT",
+                "Refresh Token Rotation",
+                "RBAC",
+                "OTP Authentication",
+                "bcrypt",
+                "Helmet",
+                "CORS",
+                "Rate Limiting"
+            ],
+            "integrations": [
+                "CRM APIs (Brevo)",
+                "WhatsApp Cloud API",
+                "SMS",
+                "Webhooks",
+                "reCAPTCHA v3",
+                "Puppeteer"
+            ],
+            "tools": [
+                "Git",
+                "GitHub",
+                "CI/CD",
+                "Vercel",
+                "Render",
+                "Postman",
+                "Linux",
+                "Agile"
+            ]
+        },
+        "skillCategories": {
+            "languages": "Languages",
+            "frontend": "Frontend",
+            "backend": "Backend",
+            "databases": "Databases",
+            "ai": "AI / LLM",
+            "security": "Security",
+            "integrations": "Integrations",
+            "tools": "Tools & DevOps"
+        },
+        "certifications": [
+            {
+                "name": "Full Stack Web Development",
+                "issuer": "Coding Ninjas",
+                "period": "Mar – Nov 2025",
+                "description": "Comprehensive full-stack engineering covering React, Node.js, Express, MongoDB, and production deployment."
+            },
+            {
+                "name": "ReactJS Development Internship",
+                "issuer": "KODBUD Solutions",
+                "period": "Nov – Dec 2025",
+                "description": "AICTE-approved 4-week internship focused on production React component architecture and REST API integration."
+            },
+            {
+                "name": "Team Player of the Year",
+                "issuer": "Recognized Excellence",
+                "period": "2024",
+                "description": "Awarded for exceptional collaboration, proactive problem-solving, and cross-functional team contribution."
+            },
+            {
+                "name": "NPTEL Online Certification",
+                "issuer": "IIT / NPTEL",
+                "period": "2024",
+                "description": "Completed NPTEL online certification programme offered by IIT faculty — demonstrating commitment to continuous learning in computer science fundamentals."
+            },
+            {
+                "name": "Claude AI 101 Certification",
+                "issuer": "Anthropic",
+                "period": "2025",
+                "description": "Official Anthropic certification covering responsible AI usage, prompt engineering, and applied Claude API integration for production workflows."
+            }
+        ],
+        "downloadLabel": "Download Résumé",
+        "viewLabel": "View PDF",
+        "experienceLabel": "Work Experience",
+        "educationLabel": "Education",
+        "skillsLabel": "Technical Skills",
+        "certificationsLabel": "Certifications",
+        "presentLabel": "Present",
+        "currentLabel": "Current"
+    }
+}
