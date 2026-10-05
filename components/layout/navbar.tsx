@@ -4,15 +4,13 @@ import React, { useState, useEffect, useRef, useMemo, useCallback } from "react"
 import Link from "next/link";
 import { motion, AnimatePresence, useScroll, useTransform, useMotionTemplate } from "framer-motion";
 import { Menu, X, ArrowRight } from "lucide-react";
-import LanguageSwitcher from "@/components/widgets/language-switcher";
 import ThemeSwitcher from "@/components/widgets/theme-switcher";
 import { useLanguage } from "@/providers/language-provider";
 import { useLenis } from "@/providers/smooth-scroll-provider";
 import { ContactModal } from "@/components/modals/contact-modal";
 
 export default function Navbar() {
-  const { dict, language } = useLanguage();
-  const isEn = language === "en";
+  const { dict } = useLanguage();
   const lenis = useLenis();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
@@ -178,7 +176,6 @@ export default function Navbar() {
           </ul>
 
           <div className="flex items-center gap-3">
-            <LanguageSwitcher />
             <ThemeSwitcher />
 
             <button
@@ -186,7 +183,7 @@ export default function Navbar() {
               className="group flex items-center bg-foreground text-background hover:bg-foreground/85 rounded-full overflow-hidden transition-all duration-200 shrink-0 shadow-sm cursor-pointer pl-4 pr-1 py-1 ml-1"
             >
               <span className="text-[10px] font-mono font-bold tracking-[0.16em] uppercase whitespace-nowrap mr-2">
-                {isEn ? "Hire Me" : "İletişim"}
+                Hire Me
               </span>
               <span className="w-6 h-6 flex items-center justify-center rounded-full bg-background/20 group-hover:bg-background/30 transition-colors shrink-0">
                 <ArrowRight className="w-3 h-3 text-background" />
@@ -257,7 +254,7 @@ export default function Navbar() {
                   }}
                   className="w-full flex items-center justify-between bg-foreground text-background rounded-full px-5 py-3 font-mono font-bold text-xs uppercase tracking-widest cursor-pointer shadow-md"
                 >
-                  <span>{isEn ? "Hire Me" : "İletişim"}</span>
+                  <span>Hire Me</span>
                   <div className="w-6 h-6 rounded-full bg-background/20 flex items-center justify-center">
                     <ArrowRight className="w-3.5 h-3.5 text-background" />
                   </div>
@@ -265,7 +262,6 @@ export default function Navbar() {
 
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <LanguageSwitcher />
                     <ThemeSwitcher />
                   </div>
                 </div>

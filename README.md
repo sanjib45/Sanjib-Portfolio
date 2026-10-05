@@ -1,20 +1,7 @@
-<a href="README.md">
-  <img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white" alt="English">
-</a>
-<a href="README-TR.md">
-  <img src="https://img.shields.io/badge/Dil-Türkçe-red?style=flat-square&logo=google-translate&logoColor=white" alt="Türkçe">
-</a>
-
-  <br />
-  <br />
-
 <div align="center">
-  <img src="public/logo.png" width="120" height="120" />
-  <br />
-  <br />
-
+  <h1>Sanjib Santra Portfolio</h1>
   <p>
-     A personal portfolio website inspired by the design quality of Awwwards.
+     A modern, interactive personal portfolio website inspired by the design quality of Awwwards.
   </p>
 
 ![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)

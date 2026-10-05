@@ -65,17 +65,12 @@ export async function generateMetadata({
       telephone: false,
     },
     alternates: {
-      canonical: `${baseUrl}/${lang}`,
-      languages: {
-        en: `${baseUrl}/en`,
-        tr: `${baseUrl}/tr`,
-        "x-default": `${baseUrl}/en`,
-      },
+      canonical: `${baseUrl}/en`,
     },
     openGraph: {
       title,
       description,
-      url: `${baseUrl}/${lang}`,
+      url: `${baseUrl}/en`,
       siteName: "Sanjib Santra Portfolio",
       images: [
         {
@@ -85,7 +80,7 @@ export async function generateMetadata({
           alt: "Sanjib Santra - Full Stack Developer",
         },
       ],
-      locale: isTr ? "tr_TR" : "en_US",
+      locale: "en_US",
       type: "website",
     },
     twitter: {
@@ -114,7 +109,7 @@ export async function generateMetadata({
 }
 
 export function generateStaticParams() {
-  return [{ lang: 'en' }, { lang: 'tr' }];
+  return [{ lang: 'en' }];
 }
 
 export default async function LangLayout({
