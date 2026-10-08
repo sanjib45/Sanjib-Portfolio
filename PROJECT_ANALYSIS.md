@@ -102,9 +102,9 @@ Before finalizing any changes, ask yourself:
 
 **`contents/en.json`** — Full content replacement with Sanjib Santra's résumé data:
 - `about.intro/description/full` — Sanjib's personal narrative
-- `projects[]` — 5 projects: Healthcare CMS, LIMS, Tea ERP (full case-study), Blog App & Placement Cell (compact)
-- `roadmap[]` — Re-purposed as Experience + Education: 3 work roles + 2 education entries
-- `manifesto[]` — Updated to Sanjib's engineering values
+- `projects[]` — 5 projects: #1 Help Create Families (HCF), #2 Enterprise Multi-Role LIMS (flagship case study), #3 Dooars Green FPO ERP (client case study), #4 EasilyJob (placement SaaS), #5 Hospital Portal SPA.
+- `metrics?[]`, `ecosystem?[]`, `technicalChallenges?[]`, `stackCategorized?` — advanced case study deep-dive fields in `types/project.ts` and `components/modals/project-modal.tsx`.
+- Strict naming rule: NEVER mention the proprietary name for the LIMS. Always reference it generically as "Enterprise Multi-Role LIMS" or "Multi-Tenant Healthcare LIMS".
 
 **`contents/tr.json`** — Stubbed with EN values (placeholder pending translation).
 

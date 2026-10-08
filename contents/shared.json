@@ -59,6 +59,14 @@
             {
                 "name": "CSS3",
                 "icon": "/stack/css3.svg"
+            },
+            {
+                "name": "TanStack Query",
+                "icon": "/stack/react.svg"
+            },
+            {
+                "name": "Material-UI",
+                "icon": "/stack/react.svg"
             }
         ],
         "backend": [
@@ -144,6 +152,14 @@
             },
             {
                 "name": "Puppeteer",
+                "icon": "/stack/nodejs.svg"
+            },
+            {
+                "name": "Razorpay Gateway",
+                "icon": "/stack/nodejs.svg"
+            },
+            {
+                "name": "PDFKit / bwip-js",
                 "icon": "/stack/nodejs.svg"
             }
         ],

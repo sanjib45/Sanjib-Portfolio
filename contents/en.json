@@ -3,7 +3,7 @@
         "tagline": "Full Stack Engineer crafting high-performance web applications with Next.js, Node.js, and TypeScript. Specializing in scalable enterprise platforms, Gen AI-powered products, and seamless user experiences.",
         "intro": "I engineer *production-grade web platforms* with **architectural clarity**, enterprise security, and end-to-end ownership — from high-scale healthcare systems to solo-deployed ERPs.",
         "description": "Full Stack Developer (MERN Stack) with hands-on production ownership across healthcare technology, headless CMS platforms, and multi-tenant systems. I design resilient RESTful APIs, implement hardened auth & RBAC, and deliver software that scales under real operational load.",
-        "full": "I'm **Sanjib Santra**, a **Full Stack Engineer (MERN / Next.js / TypeScript)** with hands-on production ownership across enterprise healthcare technology, headless CMS architectures, multi-tenant SaaS systems, and live client-deployed ERPs.\n\n**Engineering Philosophy & Production Ownership**\nWhat differentiates my engineering work is end-to-end ownership from day one. I don't just write features — I partner with stakeholders to discover domain requirements, architect scalable data models, implement hardened security boundaries, and drive systems through to production deployment and operational handover.\n\n**Production Highlights & Track Record**\n• **Help Create Families (HCF)**: Contributed to an enterprise surrogacy and parentage monorepo (Next.js 15, React 19, Express, MongoDB) featuring a 20+ block schema engine that eliminated developer dependencies for marketing page launches, alongside an ARIA-compliant 50-state legal directory and Brevo CRM sync.\n• **Dooars Green FPO ERP**: Served as the sole full-stack developer on a live client ERP deployed for a rural agricultural producer. Translated complex agricultural accounting logic into an auditable platform consolidating 7 operational workflows, automated ₹ PDF statements via Puppeteer, and enforced user-level query isolation to prevent IDOR.\n• **EasilyJob (Hiring Platform & Placement Cell)**: Architected a commercial-grade recruitment SaaS implementing the Transactional Outbox Pattern with Prisma ORM to guarantee zero dropped emails, real-time Socket.IO candidate-recruiter messaging, and double-submit CSRF protection.\n• **Multi-Role Healthcare LIMS**: Designed a 4-role Lab Information Management System with strict tenant isolation, OTP authentication, and an event-driven WhatsApp Cloud API notification engine.\n\n**Core Technical Proficiency**\n• **Frontend Architecture**: Next.js 15/14 (App Router, SSR, SSG), React 19/18, TypeScript, Tailwind CSS, GSAP ScrollTrigger, Vite, Responsive Mobile-First Design.\n• **Backend & Distributed Systems**: Node.js, Express.js 5, RESTful API Design, Prisma ORM, MongoDB Atlas, Mongoose, Socket.IO, Transactional Outbox Pattern, Event-Driven Architecture.\n• **Security & Infrastructure**: JWT refresh token rotation, rotating httpOnly cookies, RBAC, double-submit CSRF, Helmet, rate limiting, Puppeteer PDF generation, Docker, CI/CD, Vercel, Render.\n\n**Academic Excellence & Credentials**\n• **Master of Computer Applications (MCA)** — Future Institute of Engineering and Management, Kolkata (CGPA: 7.18/10).\n• **Bachelor of Computer Applications (BCA)** — Prabhat Kumar College, Contai (CGPA: 9.30/10).\n• **Certified Full Stack Web Developer** — Coding Ninjas (Mar – Nov 2025).\n• **NPTEL Online Certification** — IIT / NPTEL (2024).\n• **Claude AI 101 Certification** — Anthropic (2025).\n• Team Player of the Year (2024) — Recognized Excellence.\n\nI believe the most impactful engineers solve business-critical bottlenecks with resilient, maintainable code — always prioritizing architecture before code and security as a default."
+        "full": "I'm **Sanjib Santra**, a **Full Stack Engineer (MERN / Next.js / TypeScript)** with hands-on production ownership across enterprise healthcare technology, headless CMS architectures, multi-tenant SaaS systems, and live client-deployed ERPs.\n\n**Engineering Philosophy & Production Ownership**\nWhat differentiates my engineering work is end-to-end ownership from day one. I don't just write features — I partner with stakeholders to discover domain requirements, architect scalable data models, implement hardened security boundaries, and drive systems through to production deployment and operational handover.\n\n**Production Highlights & Track Record**\n• **Help Create Families (HCF)**: Contributed to an enterprise surrogacy and parentage monorepo (Next.js 15, React 19, Express, MongoDB) featuring a 20+ block schema engine that eliminated developer dependencies for marketing page launches, alongside an ARIA-compliant 50-state legal directory and Brevo CRM sync.\n• **Enterprise Multi-Role LIMS**: Architected a production-grade multi-tenant diagnostic SaaS spanning 4 specialized micro-portals (Core Lab, Franchise Collection, Patient, SaaS Admin) and a centralized Node.js/Express API. Built a high-concurrency PDFKit report pipeline bounded by `p-limit` pools, 6-tier RBAC with `superUserId` and `labId` scoping, and a self-healing WhatsApp worker achieving 98% delivery reliability.\n• **Dooars Green FPO ERP**: Served as the sole full-stack developer on a live client ERP deployed for a rural agricultural producer. Translated complex agricultural accounting logic into an auditable platform consolidating 7 operational workflows, automated ₹ PDF statements via Puppeteer, and enforced user-level query isolation to prevent IDOR.\n• **EasilyJob (Hiring Platform & Placement Cell)**: Architected a commercial-grade recruitment SaaS implementing the Transactional Outbox Pattern with Prisma ORM to guarantee zero dropped emails, real-time Socket.IO candidate-recruiter messaging, and double-submit CSRF protection.\n\n**Core Technical Proficiency**\n• **Frontend Architecture**: Next.js 15/14 (App Router, SSR, SSG), React 19/18, TypeScript, Tailwind CSS, GSAP ScrollTrigger, Vite, Responsive Mobile-First Design.\n• **Backend & Distributed Systems**: Node.js, Express.js 5, RESTful API Design, Prisma ORM, MongoDB Atlas, Mongoose, Socket.IO, Transactional Outbox Pattern, Event-Driven Architecture.\n• **Security & Infrastructure**: JWT refresh token rotation, rotating httpOnly cookies, RBAC, double-submit CSRF, Helmet, rate limiting, Puppeteer PDF generation, Docker, CI/CD, Vercel, Render.\n\n**Academic Excellence & Credentials**\n• **Master of Computer Applications (MCA)** — Future Institute of Engineering and Management, Kolkata (CGPA: 7.18/10).\n• **Bachelor of Computer Applications (BCA)** — Prabhat Kumar College, Contai (CGPA: 9.30/10).\n• **Certified Full Stack Web Developer** — Coding Ninjas (Mar – Nov 2025).\n• **NPTEL Online Certification** — IIT / NPTEL (2024).\n• **Claude AI 101 Certification** — Anthropic (2025).\n• Team Player of the Year (2024) — Recognized Excellence.\n\nI believe the most impactful engineers solve business-critical bottlenecks with resilient, maintainable code — always prioritizing architecture before code and security as a default."
     },
     "manifesto": [
         "OWNERSHIP FROM DAY ONE",
@@ -60,6 +60,143 @@
         },
         {
             "id": "2",
+            "title": "Enterprise Multi-Role LIMS",
+            "category": "Enterprise HealthTech — HOVSOL Technologies",
+            "year": "2025 – Present",
+            "description": "Enterprise multi-tenant Laboratory Information Management System (LIMS) powering 4 specialized web portals with a centralized high-throughput Node.js REST API. Automates diagnostic operations from phlebotomy accessioning and real-time specimen tracking to multi-tier pathologist verification, concurrency-bounded PDF reports, and self-healing WhatsApp delivery.",
+            "image": "/projects/20260427093247620.jpg",
+            "isLiveProduction": true,
+            "role": "Full Stack Developer",
+            "org": "HOVSOL Technologies",
+            "timeline": "Dec 2025 – Present",
+            "type": "Enterprise Multi-Tenant SaaS",
+            "stack": [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "React 18",
+                "TypeScript",
+                "Vite",
+                "TanStack React Query v5",
+                "Redux Toolkit",
+                "Material-UI",
+                "React Hook Form",
+                "PDFKit",
+                "bwip-js",
+                "Meta Cloud API",
+                "Razorpay",
+                "SSE"
+            ],
+            "metrics": [
+                {
+                    "label": "Delivery Reliability",
+                    "value": "98%",
+                    "description": "Reduction in WhatsApp report delivery drop-off via self-healing worker"
+                },
+                {
+                    "label": "Network Efficiency",
+                    "value": "45%",
+                    "description": "Reduction in redundant API requests via React Query v5 caching"
+                },
+                {
+                    "label": "Form Responsiveness",
+                    "value": "80%",
+                    "description": "UI speedup across 50+ test parameters using React Hook Form"
+                },
+                {
+                    "label": "Query Latency",
+                    "value": "<50ms",
+                    "description": "Compound indexing across patient bookings & audit logs"
+                }
+            ],
+            "problem": "Diagnostic laboratories faced severe bottlenecks: phlebotomy accessioning was decoupled from satellite collection centers, pathologists experienced lag during peak verification hours, high-volume PDF rendering choked server event loops, and patient WhatsApp delivery suffered frequent drop-offs.",
+            "solution": "Architected a distributed multi-tenant platform comprising 4 specialized micro-frontends and a centralized Node.js/Express backend with 6-tier RBAC, SSE specimen tracking, p-limit bounded PDFKit pipelines, and an exponential-backoff WhatsApp worker.",
+            "architectureHighlights": [
+                "Strict multi-tenant data partitioning with superUserId and labId scoping across all database queries.",
+                "Granular 6-tier Role-Based Access Control (Lab Owners, Pathologists, Technicians, Franchise Centers, Patients, Super Admins).",
+                "High-throughput PDF report pipeline using PDFKit, bwip-js (Code128 barcodes), dynamic QR codes, and p-limit concurrency pooling.",
+                "Self-healing WhatsApp notification engine with exponential backoff retries ([15m, 1h, 4h, 12h, 24h]) and HMAC-SHA256 webhook verification.",
+                "Server-Sent Events (SSE) broadcasting real-time specimen handoffs between satellite centers and central testing laboratories."
+            ],
+            "ecosystem": [
+                {
+                    "name": "Core Laboratory Operations Portal",
+                    "role": "Lab Technicians & Pathologists",
+                    "description": "Primary diagnostic workstation handling rapid accessioning, 50+ parameter result entries with biological reference highlighting, two-stage medical signoff, and 5 customizable report templates."
+                },
+                {
+                    "name": "Franchise & Satellite Collection Portal",
+                    "role": "Franchise & Satellite Partners",
+                    "description": "B2B sample collection workstation managing regional sample intake, barcode bag scanning, batch logistics dispatch, and commission ledger reconciliations."
+                },
+                {
+                    "name": "Direct-to-Consumer Patient Portal",
+                    "role": "Diagnostic Patients",
+                    "description": "Mobile-responsive web app offering OTP-based authentication, catalog search, real-time sample stage tracking, and authenticated PDF report downloads."
+                },
+                {
+                    "name": "SaaS Super Admin Governance Portal",
+                    "role": "Platform Super Admins",
+                    "description": "Multi-tenant lifecycle management, license provisioning, subscription tier gating (Free, Pro, Enterprise), and platform revenue analytics."
+                },
+                {
+                    "name": "Central LIMS Backend API & Workers",
+                    "role": "Central Core Engine",
+                    "description": "High-throughput Node.js/Express REST API powering tenant isolation, SSE real-time streams, PDFKit rendering pools, and Razorpay webhook processing."
+                }
+            ],
+            "technicalChallenges": [
+                {
+                    "title": "Concurrency & Memory Management in PDF Generation",
+                    "problem": "High-volume morning report generation with high-res vector barcodes and doctor signatures caused event-loop lag and memory spikes.",
+                    "solution": "Implemented p-limit concurrency pools to throttle parallel rendering tasks, piped PDF streams directly to disk/SFTP, and pre-validated image buffers.",
+                    "metric": "Zero event loop stalls during peak hours"
+                },
+                {
+                    "title": "Resilient WhatsApp Delivery Engine",
+                    "problem": "Unreliable network connectivity and Meta Cloud API rate limits caused lost report delivery notifications to patients.",
+                    "solution": "Built a self-healing background worker with exponential backoff ([15m, 1h, 4h, 12h, 24h]), HMAC-SHA256 webhook signatures, and 500ms pacing.",
+                    "metric": "98% reduction in notification drop-off"
+                },
+                {
+                    "title": "Strict Multi-Tenancy & Data Scoping",
+                    "problem": "Healthcare compliance required absolute data isolation across competing laboratories and satellite franchises.",
+                    "solution": "Enforced tenant isolation at the Mongoose middleware boundary and JWT claims, rejecting untrusted tenant IDs before reaching controllers.",
+                    "metric": "100% tenant data isolation"
+                },
+                {
+                    "title": "Zero-Flicker Form Architecture with 50+ Parameters",
+                    "problem": "Controlled React form inputs lagged significantly when entering values across large diagnostic panels (e.g. 20+ parameter metabolic panels).",
+                    "solution": "Migrated to uncontrolled React Hook Form with Yup schema validation, eliminating unnecessary re-renders across 50+ biological metrics.",
+                    "metric": "80% improvement in input responsiveness"
+                }
+            ],
+            "stackCategorized": {
+                "backend": ["Node.js", "Express.js", "Server-Sent Events (SSE)", "Node-Cron", "p-limit"],
+                "database": ["MongoDB", "Mongoose ODM", "Aggregation Pipelines"],
+                "frontend": ["React 18", "TypeScript", "Vite", "Material-UI (MUI v6)", "Emotion Styled Components"],
+                "state": ["TanStack React Query v5", "Redux Toolkit (RTK)"],
+                "forms": ["React Hook Form", "Yup Schema Validation"],
+                "documents": ["PDFKit", "@react-pdf/renderer", "bwip-js (Barcodes)", "qrcode"],
+                "integrations": ["Meta Cloud API (WhatsApp)", "Razorpay Subscriptions", "Twilio SMS", "Cloudways SFTP"],
+                "security": ["JWT Auth", "6-Tier RBAC", "Helmet", "Express Rate Limiting", "HMAC-SHA256 Signatures"]
+            },
+            "keyFeatures": [
+                "Full booking & sample lifecycle: accessioning → collection → testing → verification → delivery.",
+                "Real-time specimen logistics and handoff feeds between satellite franchises and core lab using SSE.",
+                "Two-tier pathologist verification workflow embedding dynamic e-signatures and QR codes.",
+                "Razorpay split transactions (Cash / Online / Due) and automated subscription billing.",
+                "Interactive staff onboarding tours powered by React Joyride."
+            ],
+            "impact": [
+                "Powering 4 web portals and 6 distinct user tiers across central laboratories and franchise collection points.",
+                "Reduced patient report delivery drop-off by 98% through automated self-healing background retry queues.",
+                "Decreased redundant client API calls by 45% via TanStack React Query v5 caching and optimistic updates.",
+                "Achieved sub-50ms query latency across high-volume booking and sample tracking records."
+            ]
+        },
+        {
+            "id": "3",
             "title": "Dooars Green FPO ERP",
             "category": "Solo Client Deployment — Dooars Green FPO (MCS Ltd.)",
             "year": "2026",
@@ -103,7 +240,7 @@
             ]
         },
         {
-            "id": "3",
+            "id": "4",
             "title": "EasilyJob — Placement Portal",
             "category": "Full-Stack SaaS Platform — Flagship Architecture",
             "year": "2026",
@@ -147,7 +284,7 @@
             ]
         },
         {
-            "id": "4",
+            "id": "5",
             "title": "Hospital Portal SPA",
             "category": "Healthcare Web App — Single Page Application",
             "year": "2025",
@@ -187,48 +324,6 @@
                 "Streamlined patient onboarding by consolidating emergency, scheduling, and doctor discovery into a fast single-page experience.",
                 "Live deployment on Vercel with public source code on GitHub demonstrating versatile frontend execution."
             ]
-        },
-        {
-            "id": "5",
-            "title": "Enterprise Multi-Role LIMS",
-            "category": "Enterprise HealthTech — HOVSOL Technologies",
-            "year": "2025 – Present",
-            "description": "Architected a production-grade multi-role Lab Information Management System serving four distinct user roles (Labs, Collection Centers, Technicians, Patients) with strict data isolation, a full booking lifecycle, and an event-driven WhatsApp notification system.",
-            "image": "/projects/20260427093247620.jpg",
-            "isLiveProduction": true,
-            "stack": [
-                "React 18",
-                "Next.js 14",
-                "TypeScript",
-                "Node.js",
-                "Express.js",
-                "JWT",
-                "MongoDB",
-                "WhatsApp Cloud API"
-            ],
-            "role": "Full Stack Developer",
-            "org": "HOVSOL Technologies",
-            "timeline": "Dec 2025 – Present",
-            "type": "Enterprise HealthTech",
-            "problem": "The organisation needed a single unified system serving four distinct user roles — Labs, Collection Centers, Technicians, and Patients — with strict data isolation, role-specific workflows, and a complete lab booking lifecycle.",
-            "solution": "Architected a production-grade multi-role LIMS with dedicated controllers and isolated data access per role, plus a mobile-first OTP-authenticated Patient Portal.",
-            "architectureHighlights": [
-                "Multi-tenant architecture isolating patient records, bookings, and configurations per role.",
-                "JWT + RBAC enforcement across all four roles — dedicated middleware per role boundary.",
-                "Event-driven WhatsApp notification system (WhatsApp Cloud API) with opt-in consent management and per-role feature toggles.",
-                "Non-blocking async notification execution — notification failures do not affect booking flow."
-            ],
-            "keyFeatures": [
-                "Full booking lifecycle: creation → sample collection → report verification → patient delivery.",
-                "OTP-authenticated Patient Portal with mobile-first UX.",
-                "Consent-first notification design — patients opt in per notification type.",
-                "Isolated data access layer — no cross-role data leakage by design."
-            ],
-            "impact": [
-                "Enabled secure, compliant multi-role operations at scale across labs, collection centers, and patients.",
-                "Patient consent-first notification design reduces notification fatigue and ensures regulatory alignment.",
-                "Eliminated data isolation risks between roles through architectural enforcement, not runtime checks."
-            ]
         }
     ],
     "roadmap": [
@@ -245,13 +340,15 @@
         {
             "id": "02",
             "year": "Dec 2025–Present",
-            "description": "Full Stack Developer at HOVSOL Technologies (India) — Architected and independently built a healthcare block-based CMS and a multi-role Lab Information Management System (LIMS) from the ground up. Owning the full stack across both products: system design, security, integrations, and delivery.",
+            "description": "Full Stack Developer at HOVSOL Technologies (India) — Architecting and engineering enterprise healthcare platforms: a multi-tenant diagnostic LIMS with 4 micro-frontends and a custom schema-driven CMS. Full-stack ownership across system design, PDF generation, security boundaries, and live deployment.",
             "stack": [
                 "React 18",
-                "Next.js 14",
                 "TypeScript",
                 "Node.js",
+                "Express.js",
                 "MongoDB",
+                "TanStack Query",
+                "PDFKit",
                 "JWT / RBAC"
             ]
         },
@@ -305,12 +402,13 @@
                 "period": "Dec 2025 – Present",
                 "type": "Full-Time",
                 "current": true,
-                "description": "Architecting and independently building production healthcare platforms — a custom block-based CMS and a multi-role Lab Information Management System (LIMS) — owning the full stack across both products.",
+                "description": "Architecting and engineering enterprise healthcare technology platforms — a multi-tenant Laboratory Information Management System (LIMS) and custom schema-driven CMS — with full-stack ownership across architecture, security, and cloud deployment.",
                 "highlights": [
-                    "Built a JSON-driven block-based CMS from scratch — eliminating developer dependency for content updates",
-                    "Architected multi-role LIMS serving 4 user roles with strict data isolation and RBAC enforcement",
-                    "Designed event-driven WhatsApp notification system with consent management and feature toggles",
-                    "Implemented centralized form dispatch routing patient data to multiple third-party CRMs"
+                    "Architected enterprise multi-tenant LIMS powering 4 web portals with centralized Node.js REST API and Server-Sent Events (SSE) specimen tracking",
+                    "Implemented strict multi-tenant data isolation and 6-tier RBAC (Lab Owners, Pathologists, Technicians, Franchises, Patients, Super Admins)",
+                    "Built clinical PDF report rendering pipeline using PDFKit, bwip-js barcodes, and p-limit concurrency pools, eliminating memory spikes during peak hours",
+                    "Designed self-healing WhatsApp automation engine with exponential backoff retries ([15m, 1h, 4h, 12h, 24h]), reducing delivery drop-off by 98%",
+                    "Built a JSON schema-driven block CMS from scratch with Next.js 15, eliminating developer dependencies for clinical and marketing page launches"
                 ]
             },
             {

@@ -1,3 +1,23 @@
+export interface KeyMetric {
+    label: string;
+    value: string;
+    description: string;
+}
+
+export interface ProjectEcosystemModule {
+    name: string;
+    role: string;
+    description: string;
+    features?: string[];
+}
+
+export interface TechnicalChallenge {
+    title: string;
+    problem: string;
+    solution: string;
+    metric?: string;
+}
+
 export type ProjectItem = {
     id: string;
     title: string;
@@ -8,7 +28,7 @@ export type ProjectItem = {
     demo?: string;
     repo?: string;
     stack?: string[];
-    // Case-study fields — populated for full-depth projects (1–3) only
+    // Case-study fields
     role?: string;
     org?: string;
     timeline?: string;
@@ -20,4 +40,18 @@ export type ProjectItem = {
     keyFeatures?: string[];
     impact?: string[];
     isLiveProduction?: boolean;
+
+    // Advanced case study deep-dives
+    metrics?: KeyMetric[];
+    ecosystem?: ProjectEcosystemModule[];
+    technicalChallenges?: TechnicalChallenge[];
+    stackCategorized?: {
+        frontend?: string[];
+        backend?: string[];
+        database?: string[];
+        documents?: string[];
+        integrations?: string[];
+        security?: string[];
+    };
 };
+

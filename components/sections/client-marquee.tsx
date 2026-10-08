@@ -36,9 +36,9 @@ const BRANDS: BrandItem[] = [
     isProduction: true,
   },
   {
-    name: "Multi-Role LIMS",
-    domain: "Diagnostics & Clinic Portal",
-    scope: "Role-Based Access Control",
+    name: "Enterprise Multi-Role LIMS",
+    domain: "Diagnostic Lab & Franchise SaaS",
+    scope: "4 Micro-Portals & Cloud API",
     isProduction: true,
   },
   {
